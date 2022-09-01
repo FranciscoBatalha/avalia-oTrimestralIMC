@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cálculo de IMC</title>
+</head>
+<body>
+    <header>Cálculo de IMC</header>
+    <div class="row">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="unnamed.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">O que é IMC?</h5>
+                  <p class="card-text">É uma abreviação de Índice de Massa Corporal</p>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="IMC-O-que-é-IMC-como-calcular-tabela-e-IMC-ideal.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Para que serve?</h5>
+                  <p class="card-text"> Para avaliar o grau de sobrepeso e obesidade.</p>
+                </div>
+              </div>
+        </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="indice-de-massa-corporal-indice-de-peso-corporal-imc_162329-338.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Como que funciona?</h5>
+              <p class="card-text"> É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).</p>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+            <p>Altura (Exemplo: 1.96)</p>
+            <input type="number" placeholder="Metros" id="altura">
+            <div style="margin: 20px;">
+    <button onclick="limpar()">Limpar</button>
+</div>
+</div>
+<div class="col">
+    <p>Peso (Exemplo: 72.2)</p>
+<input type="number" placeholder="Quilos" id="peso">
+<div>
+
+</div>
+<div style="margin: 20px;">
+<button onclick="calcularIMC()">Calcular</button>
+</div>
+</div>
+        
+    </div> 
+   
+    <div class="col">
+            <p>IMC:</p>
+<input type="number" readonly placeholder="IMC" id="imc">
+   <div id="tabela">
+            <table class="table" style="margin-top: 40px;">
+                  <tr>
+                    <th scope="col">IMC</th>
+                    <th scope="col">Classificação</th>
+                    <th scope="col">Obesidade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Menor que 18.5</th>
+                    <td>Magreza</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Entre 18.5 e 24.9</th>
+                    <td>Normal</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Entre 25.0 e 29.9</th>
+                    <td scope="row">Sobrepeso</td>
+                    <td scope="row">I</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Entre 30.0 e 39.9</th>
+                    <td scope="row">Obesidade</td>
+                    <td scope="row">II</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maior que 40.0</th>
+                    <td scope="row">Obesidade grave</td>
+                    <td scope="row">III</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+  </div>
+</div>
+    <footer>
+        <ul>
+           <li>Francisco Alexandre </li>
+          <li>2A </li>
+          <li>Escola SENAI Florianópolis</li>
+         </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
